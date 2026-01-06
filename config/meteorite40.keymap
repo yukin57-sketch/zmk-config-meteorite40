@@ -142,12 +142,13 @@
                                 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp LC(MINUS) LC(EQUAL)>, // RE0: ctrl + - / +,,,
-                <&inc_dec_kp C_VOL_DN C_VOL_UP>; // RE1: volume down/up
-
-        };
-
+            sensor-bindings = <
+        /* RE0: Ctrl + - / + */
+        &inc_dec_kp LC(MINUS) LC(EQUAL)
+        /* RE1: Volume down / up */
+        &inc_dec_kp C_VOL_DN C_VOL_UP
+    >;
+};
         layer_4 {
 			display-name = "SETTING";
 			bindings = <
@@ -157,10 +158,11 @@
 												                                                 &trans       &trans  &trans  &trans  &trans  &trans    &trans        &trans
 			>;
 
-            sensor-bindings =
-                <&inc_dec_kp LC(MINUS) LC(EQUAL)>, // RE0: ctrl + - / +,,,
-                <&inc_dec_kp C_VOL_DN C_VOL_UP>; // RE1: volume down/up
-
-        };
-    };
+            sensor-bindings = <
+        /* RE0: Ctrl + - / + */
+        &inc_dec_kp LC(MINUS) LC(EQUAL)
+        /* RE1: Volume down / up */
+        &inc_dec_kp C_VOL_DN C_VOL_UP
+    >;
+};
 };
